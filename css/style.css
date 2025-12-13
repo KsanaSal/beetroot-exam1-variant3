@@ -131,7 +131,7 @@ body {
 }
 
 .header {
-  background: linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0.49) 51%, rgba(255, 255, 255, 0) 100%), var(--light-color-2);
+  background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0.49) 51%, rgba(255, 255, 255, 0) 100%), var(--light-color-2);
   opacity: 0.5;
   margin-top: 30px;
   position: fixed;
@@ -176,11 +176,10 @@ body {
 
 .hero {
   position: relative;
-  background-image: url("../../images/bg-img/hero-bg.png");
+  background-image: url("../images/bg-img/hero-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
   height: 1030px;
   overflow: hidden;
   padding: 0;
@@ -196,14 +195,12 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75%, 5% 100%);
   pointer-events: none;
 }
-.hero__container {
-  margin-top: 260px;
-}
 .hero__content {
   display: flex;
   flex-direction: column;
   gap: 50px;
   width: 525px;
+  margin-top: 260px;
 }
 .hero__content--text {
   display: flex;
