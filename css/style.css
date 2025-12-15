@@ -92,6 +92,7 @@ img {
 a {
   display: inline-block;
   text-decoration: none;
+  color: inherit;
 }
 
 address {
@@ -660,4 +661,37 @@ body {
 }
 .contact__content--title span {
   color: var(--primary-color-light-bg);
+}
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.7;
+  border-top: 1px solid var(--gray-light-color);
+  color: var(--dark-text-color-60);
+}
+.footer__container--info {
+  display: flex;
+  gap: 12px;
+}
+.footer__container--info--link {
+  color: var(--dark-text-color);
+  font-weight: 400;
+}
+.footer__container--info--link:hover {
+  color: var(--accent-color-light-bg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.footer__container--links {
+  display: flex;
+  gap: 32px;
 }/*# sourceMappingURL=style.css.map */
