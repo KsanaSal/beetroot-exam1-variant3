@@ -1,0 +1,28 @@
+.contact {
+    padding-top: 100px;
+    padding-bottom: 0;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid var(--gray-light-color);
+        padding-top: 60px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 470px;
+
+        &--title {
+            font-size: 40px;
+            line-height: 1.2;
+
+            & span {
+                color: var(--primary-color-light-bg);
+            }
+        }
+    }
+}

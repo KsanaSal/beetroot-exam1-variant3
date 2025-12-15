@@ -4,6 +4,7 @@
 @use "./base/base";
 
 @use "./components/button";
+@use "./components/form";
 
 @use "./layouts/section";
 @use "./layouts/container";
@@ -15,3 +16,4 @@
 @use "./layouts/video";
 @use "./layouts/promises";
 @use "./layouts/reviews";
+@use "./layouts/contact";
