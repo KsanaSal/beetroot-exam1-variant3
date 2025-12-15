@@ -59,6 +59,11 @@
             align-items: center;
             justify-content: center;
             color: var(--dark-text-color);
+
+            &:hover {
+                background-color: var(--gray-light-color);
+                box-shadow: 0 4px 12px var(--primary-color-light-bg);
+            }
         }
 
         &--icon {

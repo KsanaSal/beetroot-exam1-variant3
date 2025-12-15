@@ -65,6 +65,11 @@
             height: 90px;
             border: 1px solid var(--gray-light-color);
             background-color: transparent;
+            cursor: pointer;
+
+            &:hover {
+                border: 1px solid var(--accent-hover-color-light-bg);
+            }
 
             &--position {
                 position: absolute;

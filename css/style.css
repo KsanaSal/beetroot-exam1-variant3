@@ -37,7 +37,7 @@
   --light-color: #ffffff;
   --light-color-2: rgba(255, 255, 255, 0.02);
   --dark-color: #161926;
-  --dark-text-color: #262A3F;
+  --dark-text-color: #262a3f;
   --dark-text-color-80: rgba(38, 42, 63, 0.8);
   --dark-text-color-60: rgba(38, 42, 63, 0.6);
   --dark-text-color-50: rgba(38, 42, 63, 0.5);
@@ -46,18 +46,22 @@
   --light-text-color-80: rgba(255, 255, 255, 0.8);
   --light-text-color-60: rgba(255, 255, 255, 0.6);
   --light-text-color-50: rgba(255, 255, 255, 0.5);
-  --accent-color-light-bg: #F1897B;
+  --accent-color-light-bg: #f1897b;
   --accent-color-light-bg-30: rgba(241, 137, 123, 0.3);
-  --accent-color-dark-bg: #53F3CD;
+  --accent-hover-color-light-bg: #e54f3a;
+  --accent-hover-color-light-bg-30: rgba(229, 79, 58, 0.3);
+  --accent-color-dark-bg: #53f3cd;
   --accent-color-dark-bg-30: rgba(83, 243, 205, 0.3);
-  --primary-color-light-bg: #85BBB1;
-  --primary-color-dark-bg: #689FF2;
-  --gray-light-color: #E4E4E4;
+  --accent-hover-color-dark-bg: #02e0ab;
+  --accent-hover-color-dark-bg-30: rgba(2, 224, 171, 0.3);
+  --primary-color-light-bg: #85bbb1;
+  --primary-color-dark-bg: #689ff2;
+  --gray-light-color: #e4e4e4;
   --gray-dark-color: #515773;
   --dark-color-10: rgba(38, 42, 63, 0.1);
-  --icon-color-light-bg: #262A3F;
+  --icon-color-light-bg: #262a3f;
   --icon-color-light-bg-30: rgba(88, 98, 145, 0.3);
-  --icon-color-dark-bg: #689FF2;
+  --icon-color-dark-bg: #689ff2;
   --icon-color-dark-bg-30: rgba(104, 159, 242, 0.3);
 }
 
@@ -132,7 +136,7 @@ body {
   border: none;
   position: relative;
 }
-.button::after {
+.button::before {
   content: "";
   position: absolute;
   left: 20px;
@@ -141,6 +145,12 @@ body {
   height: 13px;
   background-color: var(--accent-color-light-bg-30);
   z-index: 2;
+}
+.button:hover {
+  color: var(--accent-hover-color-light-bg);
+}
+.button:hover::before {
+  background-color: var(--accent-hover-color-light-bg-30);
 }
 
 .form {
@@ -177,7 +187,7 @@ body {
 .form__button {
   width: 165px;
 }
-.form__button::after {
+.form__button::before {
   width: 163px;
   left: 10px;
 }
@@ -331,7 +341,7 @@ body {
 .info__content--button {
   width: 175px;
 }
-.info__content--button::after {
+.info__content--button::before {
   width: 172px;
 }
 .info__list {
@@ -496,6 +506,10 @@ body {
   justify-content: center;
   color: var(--dark-text-color);
 }
+.video__image--btn:hover {
+  background-color: var(--gray-light-color);
+  box-shadow: 0 4px 12px var(--primary-color-light-bg);
+}
 .video__image--icon {
   width: 120px;
   height: 120px;
@@ -574,6 +588,10 @@ body {
   height: 90px;
   border: 1px solid var(--gray-light-color);
   background-color: transparent;
+  cursor: pointer;
+}
+.promises__content--button:hover {
+  border: 1px solid var(--accent-hover-color-light-bg);
 }
 .promises__content--button--position {
   position: absolute;

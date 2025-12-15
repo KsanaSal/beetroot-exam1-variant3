@@ -1,4 +1,4 @@
-.button{
+.button {
     width: 122px;
     font-weight: 700;
     text-transform: uppercase;
@@ -8,17 +8,21 @@
     border: none;
     position: relative;
 
-    &::after{
-        content: '';
+    &::before {
+        content: "";
         position: absolute;
         left: 20px;
         top: 10px;
         width: 112px;
-        height: 13px; 
-        background-color: var(--accent-color-light-bg-30); 
-        z-index: 2; 
+        height: 13px;
+        background-color: var(--accent-color-light-bg-30);
+        z-index: 2;
     }
 
+    &:hover {
+        color: var(--accent-hover-color-light-bg);
+        &::before {
+            background-color: var(--accent-hover-color-light-bg-30);
+        }
+    }
 }
-
-
